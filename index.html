@@ -3,8 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Abdelrahman Alnaggar — Junior Data Analyst specializing in Python, SQL, Power BI, and Machine Learning. Explore my projects and get in touch.">
+    <meta property="og:title" content="Abdo Alnaggar — Data Analyst Portfolio">
+    <meta property="og:description" content="Turning data into actionable insights. Explore my projects in data analysis and machine learning.">
     <title>Abdo (Abdelrahman) Alnaggar - Data Analyst Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -34,31 +40,29 @@
         <div class="hero-content">
             <h2 class="greeting">Hello, I'm</h2>
             <h1 class="name">Abdelrahman Alnaggar</h1>
-            <h3 class="title">Data Analyst</h3>
+            <h3 class="title">I'm a <span id="typed-text"></span><span class="cursor">|</span></h3>
             <p class="tagline">I guide companies to overcome data confusion by providing accurate analysis and visualizations that highlight trends and opportunities.</p>
             <div class="hero-buttons">
                 <a href="#projects" class="btn btn-primary">View My Work</a>
                 <a href="cv.pdf" download="cv.pdf" target="_blank" class="btn btn-secondary">Download CV</a>
-
-                
             </div>
             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/abdelrahman-alnaggar-44r4/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/Abdelrahmandeep" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/abdelrahman-alnaggar-44r4/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Abdelrahmandeep" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
             </div>
         </div>
         <div class="hero-image">
-            <img src="Gemini_Generated_Image_pvw80rpvw80rpvw8.png" alt="Abdelrahman Alnaggar Profile Picture">
+            <img src="Gemini_Generated_Image_pvw80rpvw80rpvw8.png" alt="Abdelrahman Alnaggar Profile Picture" loading="lazy">
         </div>
     </section>
 
     <section id="about" class="reveal">
         <h2 class="section-title">About Me</h2>
         <div class="about-container glass-card">
-            <p>Hi, I'm Abdo, a Junior Data Analyst passionate about turning data into actionable insights. I guide companies to overcome data confusion by providing accurate analysis and visualizations that highlight trends and opportunities. I build my skills using Excel, Python, SQL, and Power BI, and I enjoy solving problems by exploring patterns in data. My approach is detail-oriented, curious, and results-driven, with a focus on accuracy and clarity. Through my projects, I aim to combine analytical thinking with creativity to tell the story behind the numbers. For example, I built and evaluated a Random Forest model for flight ticket price prediction, achieving R² = 0.85 and MAPE = 1.5%, demonstrating strong performance in predictive analysis. I’m always learning and taking on new challenges to grow in the data field. Let’s connect if you’re looking for a motivated analyst ready to contribute and learn.</p>
-            <!-- <p>Welcome to my portfolio! Hi, I'm Abdo, a Junior Data Analyst passionate about turning data into actionable insights.</p>
-            <p>I guide companies to overcome data confusion by providing accurate analysis and visualizations that highlight trends and opportunities. I build my skills using Excel, Python, SQL, and Power BI, and I enjoy solving problems by exploring patterns in data.</p>
-            <p>My approach is detail-oriented, curious, and results-driven. For example, I built and evaluated a Random Forest model for flight ticket price prediction, achieving R&sup2; = 0.85 and MAPE = 1.5%, demonstrating strong performance in predictive analysis.</p> -->
+            <p>Hi, I'm <strong>Abdo</strong> — a Junior Data Analyst passionate about <strong>turning data into actionable insights</strong>. I guide companies to overcome data confusion by providing accurate analysis and visualizations that highlight trends and opportunities.</p>
+            <p>My toolkit includes <strong>Excel, Python, SQL, and Power BI</strong>. I enjoy solving problems by exploring patterns in data with a detail-oriented, curious, and results-driven approach focused on accuracy and clarity.</p>
+            <p>I combine analytical thinking with creativity to tell the story behind the numbers. For example, I built and evaluated a <strong>Random Forest model</strong> for flight ticket price prediction, achieving <strong>R² = 0.85</strong> and <strong>MAPE = 1.5%</strong>, demonstrating strong performance in predictive analysis.</p>
+            <p>I'm always learning and taking on new challenges to grow in the data field. Let's connect if you're looking for a motivated analyst ready to contribute and learn.</p>
         </div>
     </section>
 
@@ -68,20 +72,48 @@
             <i class="fas fa-graduation-cap edu-icon"></i>
             <h3>Bachelor of Business Information Systems (BIS)</h3>
             <h4>Egyptian Institute Of Alexandria Academy For Management and Accounting</h4>
-            <p class="date">2023 &ndash; 2027</p>
+            <p class="date"><i class="fas fa-calendar-alt"></i> 2023 &ndash; 2027</p>
         </div>
     </section>
 
     <section id="skills" class="reveal">
         <h2 class="section-title">My Skills</h2>
         <div class="skills-grid">
-            <div class="skill-card"><i class="fas fa-database"></i><p>SQL</p></div>
-            <div class="skill-card"><i class="fas fa-file-excel"></i><p>Excel</p></div>
-            <div class="skill-card"><i class="fab fa-python"></i><p>Python (Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, Plotly)</p></div>
-            <div class="skill-card"><i class="fas fa-chart-bar"></i><p>Power BI & Power Query</p></div>
-            <div class="skill-card"><i class="fas fa-brain"></i><p>Machine Learning</p></div>
-            <div class="skill-card"><i class="fas fa-chart-line"></i><p>Statistics</p></div>
-            <div class="skill-card"><i class="fas fa-broom"></i><p>Data Cleaning</p></div>
+            <div class="skill-card">
+                <i class="fas fa-database"></i>
+                <p>SQL</p>
+                <div class="skill-bar"><div class="skill-fill" style="--pct: 85%"></div></div>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-file-excel"></i>
+                <p>Excel</p>
+                <div class="skill-bar"><div class="skill-fill" style="--pct: 90%"></div></div>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-python"></i>
+                <p>Python</p>
+                <div class="skill-bar"><div class="skill-fill" style="--pct: 80%"></div></div>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-chart-bar"></i>
+                <p>Power BI</p>
+                <div class="skill-bar"><div class="skill-fill" style="--pct: 85%"></div></div>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-brain"></i>
+                <p>Machine Learning</p>
+                <div class="skill-bar"><div class="skill-fill" style="--pct: 75%"></div></div>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-chart-line"></i>
+                <p>Statistics</p>
+                <div class="skill-bar"><div class="skill-fill" style="--pct: 80%"></div></div>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-broom"></i>
+                <p>Data Cleaning</p>
+                <div class="skill-bar"><div class="skill-fill" style="--pct: 90%"></div></div>
+            </div>
         </div>
     </section>
 
@@ -90,6 +122,7 @@
         <div class="timeline">
             <div class="timeline-item right">
                 <div class="timeline-content glass-card">
+                    <span class="timeline-date"><i class="fas fa-calendar-alt"></i> 2024 &ndash; 2025</span>
                     <h3>Data Analyst Specialist Program</h3>
                     <h4>Digital Egypt Pioneers Initiative (DEPI)</h4>
                     <ul>
@@ -101,6 +134,7 @@
             </div>
             <div class="timeline-item left">
                 <div class="timeline-content glass-card">
+                    <span class="timeline-date"><i class="fas fa-calendar-alt"></i> 2024</span>
                     <h3>Artificial Intelligence for Business</h3>
                     <h4>National Telecommunication Institute (NTI)</h4>
                     <ul>
@@ -118,31 +152,59 @@
         <div class="projects-grid">
             
             <div class="project-card glass-card">
-                <img src="Screenshot 2026-02-13 124919.png" alt="Flight Ticket Price Prediction" class="project-image">
-                <h3>Flight Ticket Price Prediction</h3>
-                <p>Developed a Random Forest regression model to predict flight ticket prices based on airline, route, and travel timing. Included advanced feature engineering.</p>
-                <a href="https://github.com/Abdelrahmandeep/Flight-Price-Prediction" class="btn btn-outline" target="_blank" rel="noopener noreferrer">View Project</a>
+                <div class="project-image-wrapper">
+                    <img src="Screenshot 2026-02-13 124919.png" alt="Flight Ticket Price Prediction" class="project-image" loading="lazy">
+                </div>
+                <div class="project-body">
+                    <h3>Flight Ticket Price Prediction</h3>
+                    <p>Developed a Random Forest regression model to predict flight ticket prices based on airline, route, and travel timing. Included advanced feature engineering.</p>
+                    <div class="project-tags">
+                        <span>Python</span><span>Scikit-learn</span><span>ML</span>
+                    </div>
+                    <a href="https://github.com/Abdelrahmandeep/Flight-Price-Prediction" class="btn btn-outline" target="_blank" rel="noopener noreferrer">View Project <i class="fas fa-arrow-right"></i></a>
+                </div>
             </div>
 
             <div class="project-card glass-card">
-                <img src="Screenshot 2026-02-17 021752.png" alt="Prestige Cars Sales Performance Analysis" class="project-image">
-                <h3>Prestige Cars Sales Performance Analysis</h3>
-                <p>Cleaned data with Python and built an interactive dashboard using Plotly and Excel to analyze $25.2M revenue, uncovering top global markets and brand profitability for luxury cars.</p>
-                <a href="https://github.com/Abdelrahmandeep/Prestige-Cars-Sales-Analysis" class="btn btn-outline" target="_blank" rel="noopener noreferrer">View Project</a>
+                <div class="project-image-wrapper">
+                    <img src="Screenshot 2026-02-17 021752.png" alt="Prestige Cars Sales Performance Analysis" class="project-image" loading="lazy">
+                </div>
+                <div class="project-body">
+                    <h3>Prestige Cars Sales Analysis</h3>
+                    <p>Cleaned data with Python and built an interactive dashboard using Plotly and Excel to analyze $25.2M revenue, uncovering top global markets and brand profitability.</p>
+                    <div class="project-tags">
+                        <span>Python</span><span>Plotly</span><span>Excel</span>
+                    </div>
+                    <a href="https://github.com/Abdelrahmandeep/Prestige-Cars-Sales-Analysis" class="btn btn-outline" target="_blank" rel="noopener noreferrer">View Project <i class="fas fa-arrow-right"></i></a>
+                </div>
             </div>
 
             <div class="project-card glass-card">
-                <img src="Screenshot 2026-03-13 164602.png" alt="Coca-Cola Logistics & Sales Dashboard" class="project-image">
-                <h3>Coca-Cola Logistics & Sales Dashboard</h3>
-                <p>Developed a logistics and sales dashboard using Excel to track $6.8M in revenue, analyzing delivery efficiency across major carriers and identifying key regional sales trends.</p>
-                <a href="https://github.com/Abdelrahmandeep/Coca-Cola-Sales-Logistics-Performance-Dashboard" class="btn btn-outline" target="_blank" rel="noopener noreferrer">View Project</a>
+                <div class="project-image-wrapper">
+                    <img src="Screenshot 2026-03-13 164602.png" alt="Coca-Cola Logistics & Sales Dashboard" class="project-image" loading="lazy">
+                </div>
+                <div class="project-body">
+                    <h3>Coca-Cola Logistics &amp; Sales Dashboard</h3>
+                    <p>Developed a logistics and sales dashboard using Excel to track $6.8M in revenue, analyzing delivery efficiency across major carriers and key regional sales trends.</p>
+                    <div class="project-tags">
+                        <span>Excel</span><span>Dashboard</span><span>Logistics</span>
+                    </div>
+                    <a href="https://github.com/Abdelrahmandeep/Coca-Cola-Sales-Logistics-Performance-Dashboard" class="btn btn-outline" target="_blank" rel="noopener noreferrer">View Project <i class="fas fa-arrow-right"></i></a>
+                </div>
             </div>
 
             <div class="project-card glass-card">
-                <img src="Screenshot 2026-02-07 062619.png" alt="Pizza Sales Performance Dashboard" class="project-image">
-                <h3>Pizza Sales Performance Dashboard</h3>
-                <p>Built an interactive Excel dashboard analyzing 48K+ orders and $817K revenue to uncover peak hours, top products, and sales trends.</p>
-                <a href="https://github.com/Abdelrahmandeep/Pizza-Sales-Performance-Analysis" class="btn btn-outline" target="_blank" rel="noopener noreferrer">View Project</a>
+                <div class="project-image-wrapper">
+                    <img src="Screenshot 2026-02-07 062619.png" alt="Pizza Sales Performance Dashboard" class="project-image" loading="lazy">
+                </div>
+                <div class="project-body">
+                    <h3>Pizza Sales Performance Dashboard</h3>
+                    <p>Built an interactive Excel dashboard analyzing 48K+ orders and $817K revenue to uncover peak hours, top products, and sales trends.</p>
+                    <div class="project-tags">
+                        <span>Excel</span><span>SQL</span><span>Dashboard</span>
+                    </div>
+                    <a href="https://github.com/Abdelrahmandeep/Pizza-Sales-Performance-Analysis" class="btn btn-outline" target="_blank" rel="noopener noreferrer">View Project <i class="fas fa-arrow-right"></i></a>
+                </div>
             </div>
             
         </div>
@@ -163,7 +225,7 @@
             </div>
             <div class="service-card glass-card">
                 <i class="fas fa-filter"></i>
-                <h3>Data Cleaning & Preparation</h3>
+                <h3>Data Cleaning &amp; Preparation</h3>
                 <p>Cleaning and organizing messy datasets to make them ready for analysis and reporting.</p>
             </div>
         </div>
@@ -196,14 +258,17 @@
         <div class="footer-content">
             <h2>Abdo<span>.</span></h2>
             <div class="footer-socials">
-                <a href="https://www.linkedin.com/in/abdelrahman-alnaggar-44r4/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/Abdelrahmandeep"><i class="fab fa-github"></i></a>
-                <div class="footer-freelance">
-                <a href="https://mostaql.com/u/Abdelrahman874" target="_blank">مستقل</a> |
-                <a href="https://khamsat.com/user/abdelrahman874" target="_blank">خمسات</a> |
-                <a href="https://nafezly.com/u/AbdelrahmanAlnaggar" target="_blank">نفذلي</a> |
-                <a href="https://kafiil.com/u/abdelrahman_alnaggar" target="_blank">كفيل</a>
+                <a href="https://www.linkedin.com/in/abdelrahman-alnaggar-44r4/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Abdelrahmandeep" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
             </div>
+            <div class="footer-freelance">
+                <p>Freelance Platforms:</p>
+                <div class="platform-links">
+                    <a href="https://mostaql.com/u/Abdelrahman874" target="_blank" class="platform-btn">مستقل</a>
+                    <a href="https://khamsat.com/user/abdelrahman874" target="_blank" class="platform-btn">خمسات</a>
+                    <a href="https://nafezly.com/u/AbdelrahmanAlnaggar" target="_blank" class="platform-btn">نفذلي</a>
+                    <a href="https://kafiil.com/u/abdelrahman_alnaggar" target="_blank" class="platform-btn">كفيل</a>
+                </div>
             </div>
             <p>&copy; 2026 Abdelrahman Alnaggar. All rights reserved.</p>
         </div>
