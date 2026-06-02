@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Abdelrahman Alnaggar — Junior Data Analyst specializing in Python, SQL, Power BI, and Machine Learning. Explore my projects and get in touch.">
+    <meta name="description"
+        content="Abdelrahman Alnaggar — Junior Data Analyst specializing in Python, SQL, Power BI, and Machine Learning. Explore my projects and get in touch.">
     <!-- Open Graph -->
     <meta property="og:title" content="Abdo Alnaggar — Data Analyst Portfolio">
-    <meta property="og:description" content="Turning data into actionable insights. Explore projects in data analysis and machine learning.">
-    <meta property="og:image" content="https://abdelrahmandeep.github.io/abdelrahman-deep.github.io/og_image.png">
+    <meta property="og:description"
+        content="Turning data into actionable insights. Explore projects in data analysis and machine learning.">
+    <meta property="og:image" content="https://abdelrahmandeep.github.io/abdelrahman-deep.github.io/assets/img/og_image.png">
     <meta property="og:url" content="https://abdelrahmandeep.github.io/abdelrahman-deep.github.io/">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://abdelrahmandeep.github.io/abdelrahman-deep.github.io/og_image.png">
+    <meta name="twitter:image" content="https://abdelrahmandeep.github.io/abdelrahman-deep.github.io/assets/img/og_image.png">
     <title>Abdo (Abdelrahman) Alnaggar - Data Analyst Portfolio</title>
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%238B5A2B'/><text y='.9em' font-size='70' font-family='Outfit,sans-serif' font-weight='700' fill='%23FDFBF7' x='15'>A</text></svg>">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%238B5A2B'/><text y='.9em' font-size='70' font-family='Outfit,sans-serif' font-weight='700' fill='%23FDFBF7' x='15'>A</text></svg>">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
+
+    <!-- ========== INTERACTIVE BACKGROUND ========== -->
+    <canvas id="bg-canvas"></canvas>
 
     <!-- ========== SCROLL PROGRESS BAR ========== -->
     <div id="scroll-progress"></div>
@@ -29,8 +38,13 @@
     <!-- ========== LOADING SCREEN ========== -->
     <div id="loader">
         <div class="loader-content">
-            <h1 class="loader-name">Abdo<span>.</span></h1>
-            <div class="loader-bar"><div class="loader-fill"></div></div>
+            <div class="loader-name">
+                <span class="lang-en">Abdo<span>.</span></span>
+                <span class="lang-ar">عبده<span>.</span></span>
+            </div>
+            <div class="loader-bar">
+                <div class="loader-fill"></div>
+            </div>
         </div>
     </div>
 
@@ -40,7 +54,9 @@
     </button>
 
     <!-- ========== WHATSAPP BUTTON ========== -->
-    <a id="whatsapp-btn" href="https://wa.me/201069218392?text=Hi%20Abdo%2C%20I%20saw%20your%20portfolio%20and%20I'd%20like%20to%20get%20in%20touch!" target="_blank" aria-label="Chat on WhatsApp">
+    <a id="whatsapp-btn"
+        href="https://wa.me/201069218392?text=Hi%20Abdo%2C%20I%20saw%20your%20portfolio%20and%20I'd%20like%20to%20get%20in%20touch!"
+        target="_blank" aria-label="Chat on WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
@@ -52,198 +68,401 @@
     <!-- ========== NAVBAR ========== -->
     <nav id="navbar">
         <div class="nav-container">
-            <h1 class="logo">Abdo<span>.</span></h1>
+            <div class="logo">
+                <span class="lang-en">Abdo<span>.</span></span>
+                <span class="lang-ar">عبده<span>.</span></span>
+            </div>
             <ul class="nav-links" id="nav-links">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#certifications">Certs</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#hero"><span class="lang-en">Home</span><span class="lang-ar">الرئيسية</span></a></li>
+                <li><a href="#about"><span class="lang-en">About</span><span class="lang-ar">من أنا</span></a></li>
+                <li><a href="#education"><span class="lang-en">Education</span><span class="lang-ar">التعليم</span></a></li>
+                <li><a href="#services"><span class="lang-en">Services</span><span class="lang-ar">الخدمات</span></a></li>
+                <li><a href="#experience"><span class="lang-en">Experience</span><span class="lang-ar">الخبرة</span></a></li>
+                <li><a href="#skills"><span class="lang-en">Skills</span><span class="lang-ar">المهارات</span></a></li>
+                <li><a href="#certifications"><span class="lang-en">Certifications</span><span class="lang-ar">الشهادات</span></a></li>
+                <li><a href="#projects"><span class="lang-en">Projects</span><span class="lang-ar">المشاريع</span></a></li>
+                <li><a href="#contact"><span class="lang-en">Contact</span><span class="lang-ar">اتصل بي</span></a></li>
             </ul>
-            <button id="theme-toggle" aria-label="Toggle Dark Mode">
-                <i class="fas fa-moon"></i>
-            </button>
-            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
-                <i class="fas fa-bars"></i>
-            </button>
+            <div class="nav-actions" style="display: flex; gap: 10px; align-items: center;">
+                <button id="lang-toggle" aria-label="Toggle Language" class="lang-btn">
+                    <i class="fas fa-globe"></i> <span id="lang-text">العربية</span>
+                </button>
+                <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false"
+                    aria-controls="nav-links">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
         </div>
     </nav>
 
     <!-- ========== HERO ========== -->
     <section id="hero" class="reveal">
-        <canvas id="particles-canvas"></canvas>
         <div class="hero-content">
-            <h2 class="greeting">Hello, I'm</h2>
-            <h1 class="name">Abdelrahman Alnaggar</h1>
-            <div class="work-badge"><span class="badge-dot"></span> Open to Work</div>
-            <h3 class="title">I'm a <span id="typed-text"></span><span class="cursor">|</span></h3>
-            <p class="tagline">I guide companies to overcome data confusion by providing accurate analysis and visualizations that highlight trends and opportunities.</p>
+            <h2 class="greeting">
+                <span class="lang-en">Hello, I'm</span>
+                <span class="lang-ar">مرحباً، أنا</span>
+            </h2>
+            <h1 class="name">
+                <span class="lang-en">Abdelrahman Alnaggar</span>
+                <span class="lang-ar">عبد الرحمن النجار</span>
+            </h1>
+            <div class="work-badge">
+                <span class="badge-dot"></span>
+                <span class="lang-en">Open to Work</span>
+                <span class="lang-ar">متاح للعمل</span>
+            </div>
+            <h3 class="title">
+                <span class="lang-en">I'm a </span>
+                <span class="lang-ar">أنا </span>
+                <span id="typed-text"></span><span class="cursor">|</span>
+            </h3>
+            <p class="tagline">
+                <span class="lang-en">I guide companies to overcome data confusion by providing accurate analysis and visualizations that highlight trends and opportunities.</span>
+                <span class="lang-ar">أساعد الشركات في التغلب على تعقيد البيانات من خلال تقديم تحليلات دقيقة وتقارير مرئية توضح الاتجاهات والفرص.</span>
+            </p>
             <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="cv.pdf" download="cv.pdf" target="_blank" class="btn btn-secondary">Download CV</a>
+                <a href="#projects" class="btn btn-primary">
+                    <span class="lang-en">View My Work</span>
+                    <span class="lang-ar">عرض أعمالي</span>
+                </a>
+                <a href="assets/docs/Abdelrahman Alnaggar cv.pdf" download="Abdelrahman Alnaggar cv.pdf" target="_blank"
+                    class="btn btn-secondary">
+                    <span class="lang-en">Download CV</span>
+                    <span class="lang-ar">تحميل السيرة الذاتية</span>
+                </a>
             </div>
             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/abdelrahman-alnaggar-44r4/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/Abdelrahmandeep" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/abdelrahman-alnaggar-44r4/" target="_blank"
+                    aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Abdelrahmandeep" target="_blank" aria-label="GitHub"><i
+                        class="fab fa-github"></i></a>
             </div>
         </div>
-        <div class="hero-image">
-            <img src="Gemini_Generated_Image_pvw80rpvw80rpvw8.png" alt="Abdelrahman Alnaggar Profile Picture" loading="eager">
+        <div class="hero-image-container">
+            <div class="hero-image-glow"></div>
+            <img src="assets/img/profile.png" alt="Abdelrahman Alnaggar Profile Picture" loading="eager">
+        </div>
+        <div class="scroll-indicator" aria-hidden="true">
+            <span class="lang-en">Scroll</span>
+            <span class="lang-ar">مرر لأسفل</span>
+            <i class="fas fa-chevron-down"></i>
         </div>
     </section>
 
     <!-- ========== ABOUT ========== -->
     <section id="about" class="reveal">
-        <h2 class="section-title">About Me</h2>
+        <h2 class="section-title">
+            <span class="lang-en">About Me</span>
+            <span class="lang-ar">من أنا</span>
+        </h2>
         <div class="about-container glass-card">
-            <p>Hi, I'm <strong>Abdo</strong> — a Junior Data Analyst passionate about <strong>turning data into actionable insights</strong>. I guide companies to overcome data confusion by providing accurate analysis and visualizations that highlight trends and opportunities.</p>
-            <p>My toolkit includes <strong>Excel, Python, SQL, and Power BI</strong>. I enjoy solving problems by exploring patterns in data with a detail-oriented, curious, and results-driven approach focused on accuracy and clarity.</p>
-            <p>I combine analytical thinking with creativity to tell the story behind the numbers. For example, I built and evaluated a <strong>Random Forest model</strong> for flight ticket price prediction, achieving <strong>R² = 0.85</strong> and <strong>MAPE = 1.5%</strong>, demonstrating strong performance in predictive analysis.</p>
-            <p>I'm always learning and taking on new challenges to grow in the data field. Let's connect if you're looking for a motivated analyst ready to contribute and learn.</p>
-        </div>
-    </section>
-
-    <!-- ========== STATS COUNTER ========== -->
-    <section id="stats" class="stats-section reveal">
-        <div class="stats-grid">
-            <div class="stat-item">
-                <i class="fas fa-project-diagram"></i>
-                <h3 class="counter" data-target="4">0</h3>
-                <p>Projects Completed</p>
+            <div class="lang-en">
+                <p>Hi, I'm <strong>Abdo</strong> — a Junior Data Analyst passionate about <strong>turning data into
+                        actionable insights</strong>. I guide companies to overcome data confusion by providing accurate analysis and
+                    visualizations that highlight trends and opportunities.</p>
+                <p>My toolkit includes <strong>Excel, Python, SQL, and Power BI</strong>. I enjoy solving problems by
+                    exploring patterns in data with a detail-oriented, curious, and results-driven approach focused on accuracy and
+                    clarity.</p>
+                <p>I combine analytical thinking and creative data storytelling to unlock the value behind numbers. Notably, I engineered a <strong>Random Forest model</strong> for flight price forecasting—achieving <strong>R² = 0.85</strong> and <strong>MAPE = 1.5%</strong>—demonstrating my strength in deploying high-performance predictive analytics.</p>
+                <p>I'm always learning and taking on new challenges to grow in the data field. Let's connect if you're
+                    looking for a motivated analyst ready to contribute and learn.</p>
             </div>
-            <div class="stat-item">
-                <i class="fas fa-certificate"></i>
-                <h3 class="counter" data-target="4">0</h3>
-                <p>Programs Completed</p>
-            </div>
-            <div class="stat-item">
-                <i class="fas fa-database"></i>
-                <h3 class="counter" data-target="300">0</h3>
-                <p>Thousand+ Rows Analyzed</p>
+            <div class="lang-ar">
+                <p>مرحباً، أنا <strong>عبده</strong> — محلل بيانات مبتدئ شغوف بـ <strong>تحويل البيانات إلى رؤى قابلة للتنفيذ</strong>. أساعد الشركات في التغلب على تعقيد البيانات من خلال تقديم تحليلات دقيقة وتقارير مرئية توضح الاتجاهات والفرص.</p>
+                <p>تتضمن أدواتي <strong>Excel و Python و SQL و Power BI</strong>. أستمتع بحل المشكلات من خلال استكشاف الأنماط في البيانات بأسلوب دقيق وفضولي وموجه نحو النتائج يركز على الدقة والوضوح.</p>
+                <p>أجمع بين التفكير التحليلي والسرد الإبداعي للبيانات لاستكشاف القيمة الحقيقية وراء الأرقام. لعل من أبرز أعمالي تطوير <strong>نموذج الغابات العشوائية (Random Forest)</strong> للتنبؤ بأسعار الطيران — محققاً دقة <strong>R² = 0.85</strong> ونسبة خطأ <strong>MAPE = 1.5%</strong> — مما يعكس مهاراتي القوية في التحليل التنبئي المتقدم.</p>
+                <p>أنا دائم التعلم وخوض التحديات الجديدة للنمو في مجال البيانات. دعنا نتواصل إذا كنت تبحث عن محلل بيانات متحمس ومستعد للمساهمة والتعلم.</p>
             </div>
         </div>
     </section>
 
     <!-- ========== EDUCATION ========== -->
     <section id="education" class="reveal">
-        <h2 class="section-title">Education</h2>
+        <h2 class="section-title">
+            <span class="lang-en">Education</span>
+            <span class="lang-ar">التعليم</span>
+        </h2>
         <div class="education-card glass-card">
             <i class="fas fa-graduation-cap edu-icon"></i>
-            <h3>Bachelor of Business Information Systems (BIS)</h3>
-            <h4>Egyptian Institute Of Alexandria Academy For Management and Accounting</h4>
-            <p class="date"><i class="fas fa-calendar-alt"></i> 2023 &ndash; 2027</p>
+            <h3>
+                <span class="lang-en">Bachelor of Business Information Systems (BIS)</span>
+                <span class="lang-ar">بكالوريوس نظم معلومات الأعمال (BIS)</span>
+            </h3>
+            <h4>
+                <span class="lang-en">Egyptian Institute Of Alexandria Academy For Management and Accounting</span>
+                <span class="lang-ar">المعهد المصري لأكاديمية الإسكندرية للإدارة والمحاسبة</span>
+            </h4>
+            <p class="date">
+                <i class="fas fa-calendar-alt"></i> 
+                <span class="lang-en">2023 &ndash; 2027</span>
+                <span class="lang-ar">2023 &ndash; 2027</span>
+            </p>
         </div>
     </section>
 
-    <!-- ========== SKILLS ========== -->
-    <section id="skills" class="reveal">
-        <h2 class="section-title">My Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card" data-tooltip="MySQL · PostgreSQL · SQL Server">
-                <i class="fas fa-database"></i>
-                <p>SQL</p>
-                <div class="skill-bar"><div class="skill-fill" data-pct="85%"></div></div>
+    <!-- ========== SERVICES ========== -->
+    <section id="services" class="reveal">
+        <h2 class="section-title">
+            <span class="lang-en">Services I Offer</span>
+            <span class="lang-ar">الخدمات التي أقدمها</span>
+        </h2>
+        <div class="services-grid">
+            <div class="service-card glass-card">
+                <i class="fas fa-chart-pie"></i>
+                <h3>
+                    <span class="lang-en">Dashboard Development</span>
+                    <span class="lang-ar">تطوير لوحات البيانات</span>
+                </h3>
+                <p class="lang-en">Building interactive dashboards to visualize data and track business performance.</p>
+                <p class="lang-ar">بناء لوحات بيانات تفاعلية لتصور البيانات ومتابعة أداء الأعمال.</p>
             </div>
-            <div class="skill-card" data-tooltip="Pivot Tables · Power Query · Charts">
-                <i class="fas fa-file-excel"></i>
-                <p>Excel</p>
-                <div class="skill-bar"><div class="skill-fill" data-pct="90%"></div></div>
+            <div class="service-card glass-card">
+                <i class="fas fa-robot"></i>
+                <h3>
+                    <span class="lang-en">Machine Learning Models</span>
+                    <span class="lang-ar">نماذج التعلم الآلي</span>
+                </h3>
+                <p class="lang-en">Developing predictive models to extract insights and forecast outcomes from data.</p>
+                <p class="lang-ar">تطوير نماذج تنبؤية لاستخراج الرؤى وتوقع النتائج من البيانات.</p>
             </div>
-            <div class="skill-card" data-tooltip="Pandas · NumPy · Scikit-learn · Matplotlib">
-                <i class="fab fa-python"></i>
-                <p>Python</p>
-                <div class="skill-bar"><div class="skill-fill" data-pct="80%"></div></div>
-            </div>
-            <div class="skill-card" data-tooltip="DAX · Power Query · Reports · Dashboards">
-                <i class="fas fa-chart-bar"></i>
-                <p>Power BI</p>
-                <div class="skill-bar"><div class="skill-fill" data-pct="85%"></div></div>
-            </div>
-            <div class="skill-card" data-tooltip="Random Forest · Regression · Scikit-learn">
-                <i class="fas fa-brain"></i>
-                <p>Machine Learning</p>
-                <div class="skill-bar"><div class="skill-fill" data-pct="75%"></div></div>
-            </div>
-            <div class="skill-card" data-tooltip="Descriptive · Inferential · Probability">
-                <i class="fas fa-chart-line"></i>
-                <p>Statistics</p>
-                <div class="skill-bar"><div class="skill-fill" data-pct="80%"></div></div>
-            </div>
-            <div class="skill-card" data-tooltip="ETL · Pandas · Data Wrangling · Validation">
-                <i class="fas fa-broom"></i>
-                <p>Data Cleaning</p>
-                <div class="skill-bar"><div class="skill-fill" data-pct="90%"></div></div>
+            <div class="service-card glass-card">
+                <i class="fas fa-filter"></i>
+                <h3>
+                    <span class="lang-en">Data Cleaning &amp; Preparation</span>
+                    <span class="lang-ar">تنظيف وتهيئة البيانات</span>
+                </h3>
+                <p class="lang-en">Cleaning and organizing messy datasets to make them ready for analysis and reporting.</p>
+                <p class="lang-ar">تنظيف وتنظيم مجموعات البيانات العشوائية لتجهيزها للتحليل وإعداد التقارير.</p>
             </div>
         </div>
     </section>
 
     <!-- ========== EXPERIENCE ========== -->
     <section id="experience" class="reveal">
-        <h2 class="section-title">Work Experience</h2>
+        <h2 class="section-title">
+            <span class="lang-en">Work Experience</span>
+            <span class="lang-ar">الخبرة المهنية</span>
+        </h2>
         <div class="timeline">
             <div class="timeline-item right">
                 <div class="timeline-content glass-card">
-                    <span class="timeline-date"><i class="fas fa-calendar-alt"></i> 2025 &ndash; Present</span>
-                    <h3>Data Analyst Specialist Program</h3>
-                    <h4>Digital Egypt Pioneers Initiative (DEPI)</h4>
-                    <ul>
+                    <span class="timeline-date">
+                        <i class="fas fa-calendar-alt"></i> 
+                        <span class="lang-en">2025 &ndash; Present</span>
+                        <span class="lang-ar">2025 &ndash; الحالي</span>
+                    </span>
+                    <h3>
+                        <span class="lang-en">Data Analyst Specialist Program</span>
+                        <span class="lang-ar">برنامج أخصائي تحليل البيانات</span>
+                    </h3>
+                    <h4>
+                        <span class="lang-en">Digital Egypt Pioneers Initiative (DEPI)</span>
+                        <span class="lang-ar">مبادرة رواد مصر الرقمية (DEPI)</span>
+                    </h4>
+                    <ul class="lang-en">
                         <li>Utilized Python and SQL to prepare and clean data for analysis, enhancing data quality.</li>
                         <li>Created impactful visualizations and dashboards using Tableau and Power BI.</li>
                         <li>Developed skills in data governance to ensure data quality, security, and compliance.</li>
+                    </ul>
+                    <ul class="lang-ar">
+                        <li>استخدام بايثون و SQL لإعداد وتنظيف البيانات للتحليل، وتحسين جودتها.</li>
+                        <li>إنشاء تصورات بيانية وتقارير تفاعلية مميزة باستخدام Tableau و Power BI.</li>
+                        <li>تطوير المهارات في حوكمة البيانات لضمان الجودة والأمان والامتثال.</li>
                     </ul>
                 </div>
             </div>
             <div class="timeline-item left">
                 <div class="timeline-content glass-card">
                     <span class="timeline-date"><i class="fas fa-calendar-alt"></i> 2024</span>
-                    <h3>Artificial Intelligence for Business</h3>
-                    <h4>National Telecommunication Institute (NTI)</h4>
-                    <ul>
+                    <h3>
+                        <span class="lang-en">Artificial Intelligence for Business</span>
+                        <span class="lang-ar">الذكاء الاصطناعي للأعمال</span>
+                    </h3>
+                    <h4>
+                        <span class="lang-en">National Telecommunication Institute (NTI)</span>
+                        <span class="lang-ar">المعهد القومي للاتصالات (NTI)</span>
+                    </h4>
+                    <ul class="lang-en">
                         <li>Completed hands-on training in machine learning, deep learning, and AI applications.</li>
-                        <li>Developed and deployed supervised learning models using Python, Scikit-learn, and TensorFlow.</li>
-                        <li>Built and evaluated a Random Forest model for flight ticket price prediction (R&sup2; = 0.85).</li>
+                        <li>Developed and deployed supervised learning models using Python, Scikit-learn, and
+                            TensorFlow.</li>
+                        <li>Built and evaluated a Random Forest model for flight ticket price prediction (R&sup2; =
+                            0.85).</li>
+                    </ul>
+                    <ul class="lang-ar">
+                        <li>إتمام تدريب عملي في التعلم الآلي، والتعلم العميق، وتطبيقات الذكاء الاصطناعي.</li>
+                        <li>تطوير ونشر نماذج التعلم الخاضع للإشراف باستخدام Python و Scikit-learn و TensorFlow.</li>
+                        <li>بناء وتقييم نموذج Random Forest للتنبؤ بأسعار تذاكر الطيران (R² = 0.85).</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ========== SKILLS ========== -->
+    <section id="skills" class="reveal">
+        <h2 class="section-title">
+            <span class="lang-en">My Skills</span>
+            <span class="lang-ar">مهاراتي</span>
+        </h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-circle">
+                    <svg viewBox="0 0 120 120">
+                        <circle class="skill-bg-ring" cx="60" cy="60" r="54" />
+                        <circle class="skill-progress-ring" cx="60" cy="60" r="54" data-pct="85" />
+                    </svg>
+                    <span class="skill-pct">85%</span>
+                </div>
+                <i class="fas fa-database"></i>
+                <p class="skill-name">SQL</p>
+                <p class="skill-sub lang-en">MySQL · PostgreSQL · SQL Server</p>
+                <p class="skill-sub lang-ar">MySQL · PostgreSQL · SQL Server</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-circle">
+                    <svg viewBox="0 0 120 120">
+                        <circle class="skill-bg-ring" cx="60" cy="60" r="54" />
+                        <circle class="skill-progress-ring" cx="60" cy="60" r="54" data-pct="100" />
+                    </svg>
+                    <span class="skill-pct">100%</span>
+                </div>
+                <i class="fas fa-file-excel"></i>
+                <p class="skill-name">Excel</p>
+                <p class="skill-sub lang-en">Pivot Tables · Power Query · Charts</p>
+                <p class="skill-sub lang-ar">جداول محورية · Power Query · رسوم بيانية</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-circle">
+                    <svg viewBox="0 0 120 120">
+                        <circle class="skill-bg-ring" cx="60" cy="60" r="54" />
+                        <circle class="skill-progress-ring" cx="60" cy="60" r="54" data-pct="100" />
+                    </svg>
+                    <span class="skill-pct">100%</span>
+                </div>
+                <i class="fas fa-chart-bar"></i>
+                <p class="skill-name">Power BI</p>
+                <p class="skill-sub lang-en">DAX · Power Query · Reports · Dashboards</p>
+                <p class="skill-sub lang-ar">DAX · Power Query · تقارير · لوحات بيانات</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-circle">
+                    <svg viewBox="0 0 120 120">
+                        <circle class="skill-bg-ring" cx="60" cy="60" r="54" />
+                        <circle class="skill-progress-ring" cx="60" cy="60" r="54" data-pct="75" />
+                    </svg>
+                    <span class="skill-pct">75%</span>
+                </div>
+                <i class="fas fa-brain"></i>
+                <p class="skill-name">
+                    <span class="lang-en">Machine Learning</span>
+                    <span class="lang-ar">التعلم الآلي</span>
+                </p>
+                <p class="skill-sub lang-en">Random Forest · Regression · Scikit-learn</p>
+                <p class="skill-sub lang-ar">Random Forest · انحدار · Scikit-learn</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-circle">
+                    <svg viewBox="0 0 120 120">
+                        <circle class="skill-bg-ring" cx="60" cy="60" r="54" />
+                        <circle class="skill-progress-ring" cx="60" cy="60" r="54" data-pct="80" />
+                    </svg>
+                    <span class="skill-pct">80%</span>
+                </div>
+                <i class="fas fa-chart-line"></i>
+                <p class="skill-name">
+                    <span class="lang-en">Statistics</span>
+                    <span class="lang-ar">الإحصاء</span>
+                </p>
+                <p class="skill-sub lang-en">Descriptive · Inferential · Probability</p>
+                <p class="skill-sub lang-ar">إحصاء وصفي · استدلالي · احتمالات</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-circle">
+                    <svg viewBox="0 0 120 120">
+                        <circle class="skill-bg-ring" cx="60" cy="60" r="54" />
+                        <circle class="skill-progress-ring" cx="60" cy="60" r="54" data-pct="90" />
+                    </svg>
+                    <span class="skill-pct">90%</span>
+                </div>
+                <i class="fas fa-broom"></i>
+                <p class="skill-name">
+                    <span class="lang-en">Data Cleaning</span>
+                    <span class="lang-ar">تنظيف البيانات</span>
+                </p>
+                <p class="skill-sub lang-en">ETL · Pandas · Data Wrangling · Validation</p>
+                <p class="skill-sub lang-ar">معالجة البيانات · Pandas · تنظيف البيانات</p>
+            </div>
+        </div>
+    </section>
+
     <!-- ========== CERTIFICATIONS ========== -->
     <section id="certifications" class="reveal">
-        <h2 class="section-title">Certifications</h2>
+        <h2 class="section-title">
+            <span class="lang-en">Certifications</span>
+            <span class="lang-ar">الشهادات</span>
+        </h2>
         <div class="certs-grid">
-            <div class="cert-card glass-card" data-modal="cert-modal-1" style="cursor: pointer;" title="View Certificate">
+            <div class="cert-card glass-card" data-modal="cert-modal-1" style="cursor: pointer;"
+                title="View Certificate">
                 <div class="cert-icon"><i class="fas fa-award"></i></div>
                 <div class="cert-info">
-                    <h3>Artificial Intelligence for Business</h3>
-                    <h4>National Telecommunication Institute (NTI)</h4>
+                    <h3>
+                        <span class="lang-en">Artificial Intelligence for Business</span>
+                        <span class="lang-ar">الذكاء الاصطناعي للأعمال</span>
+                    </h3>
+                    <h4>
+                        <span class="lang-en">National Telecommunication Institute (NTI)</span>
+                        <span class="lang-ar">المعهد القومي للاتصالات (NTI)</span>
+                    </h4>
                     <span class="cert-year">2025</span>
                 </div>
             </div>
-            <div class="cert-card glass-card" data-modal="cert-modal-2" style="cursor: pointer;" title="View Certificate">
+            <div class="cert-card glass-card" data-modal="cert-modal-2" style="cursor: pointer;"
+                title="View Certificate">
                 <div class="cert-icon"><i class="fas fa-award"></i></div>
                 <div class="cert-info">
-                    <h3>AI Career Essentials</h3>
-                    <h4>ALX Africa</h4>
+                    <h3>
+                        <span class="lang-en">AI Career Essentials</span>
+                        <span class="lang-ar">أساسيات الحياة المهنية للذكاء الاصطناعي</span>
+                    </h3>
+                    <h4>
+                        <span class="lang-en">ALX Africa</span>
+                        <span class="lang-ar">ALX أفريقيا</span>
+                    </h4>
                     <span class="cert-year">2024</span>
                 </div>
             </div>
-            <div class="cert-card glass-card" data-modal="cert-modal-3" style="cursor: pointer;" title="View Certificate">
+            <div class="cert-card glass-card" data-modal="cert-modal-3" style="cursor: pointer;"
+                title="View Certificate">
                 <div class="cert-icon"><i class="fas fa-award"></i></div>
                 <div class="cert-info">
-                    <h3>Getting Started with Deep Learning</h3>
-                    <h4>NVIDIA</h4>
+                    <h3>
+                        <span class="lang-en">Getting Started with Deep Learning</span>
+                        <span class="lang-ar">مقدمة في التعلم العميق</span>
+                    </h3>
+                    <h4>
+                        <span class="lang-en">NVIDIA</span>
+                        <span class="lang-ar">إنفيديا (NVIDIA)</span>
+                    </h4>
                     <span class="cert-year">2025</span>
                 </div>
             </div>
-            <div class="cert-card glass-card" data-modal="cert-modal-4" style="cursor: pointer;" title="View Certificate">
+            <div class="cert-card glass-card" data-modal="cert-modal-4" style="cursor: pointer;"
+                title="View Certificate">
                 <div class="cert-icon"><i class="fas fa-award"></i></div>
                 <div class="cert-info">
-                    <h3>Data Analysis</h3>
-                    <h4>Microsoft</h4>
+                    <h3>
+                        <span class="lang-en">Data Analysis</span>
+                        <span class="lang-ar">تحليل البيانات</span>
+                    </h3>
+                    <h4>
+                        <span class="lang-en">Microsoft</span>
+                        <span class="lang-ar">مايكروسوفت (Microsoft)</span>
+                    </h4>
                     <span class="cert-year">2025</span>
                 </div>
             </div>
@@ -252,66 +471,135 @@
 
     <!-- ========== PROJECTS ========== -->
     <section id="projects" class="reveal">
-        <h2 class="section-title">Featured Projects</h2>
+        <h2 class="section-title">
+            <span class="lang-en">Featured Projects</span>
+            <span class="lang-ar">أبرز المشاريع</span>
+        </h2>
         <div class="projects-grid">
 
-            <div class="project-card glass-card" data-modal="modal-1">
+            <!-- FEATURED: Nex Valut -->
+            <div class="project-card glass-card featured" data-modal="modal-5">
+                <span class="featured-badge">
+                    <i class="fas fa-star"></i> 
+                    <span class="lang-en">Featured</span>
+                    <span class="lang-ar">مميز</span>
+                </span>
                 <div class="project-image-wrapper">
-                    <img src="screenshot-flight-prediction.png" alt="Flight Ticket Price Prediction" class="project-image" loading="lazy">
+                    <img src="assets/img/projects/nex-valut.png" alt="Nex Valut - Financial Performance Dashboard"
+                        class="project-image" loading="lazy">
                     <div class="project-overlay"><i class="fas fa-expand-alt"></i></div>
                 </div>
                 <div class="project-body">
-                    <h3>Flight Ticket Price Prediction</h3>
-                    <p>Developed a Random Forest regression model to predict flight ticket prices based on airline, route, and travel timing.</p>
+                    <h3>
+                        <span class="lang-en">Nex Valut Financial Dashboard</span>
+                        <span class="lang-ar">لوحة بيانات نكس فالت المالية</span>
+                    </h3>
+                    <p class="lang-en">Developed an interactive Power BI dashboard analyzing key KPIs (Revenue, Net Profit, OpEx) and budgets to deliver corporate performance insights.</p>
+                    <p class="lang-ar">تطوير لوحة بيانات تفاعلية باستخدام Power BI لتحليل المؤشرات الرئيسية (الإيرادات، صافي الأرباح، المصروفات) والميزانيات لتقديم تقارير الأداء المالي للشركات.</p>
+                    <div class="project-tags">
+                        <span>Power BI</span><span>DAX</span><span>Power Query</span>
+                    </div>
+                    <a href="https://github.com/Abdelrahmandeep/Nex-Valut---Financial-Performance-Dashboard"
+                        class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+                        <span class="lang-en">View Project <i class="fas fa-arrow-right"></i></span>
+                        <span class="lang-ar">عرض المشروع <i class="fas fa-arrow-left"></i></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card glass-card" data-modal="modal-1">
+                <div class="project-image-wrapper">
+                    <img src="assets/img/projects/flight-prediction.png" alt="Flight Ticket Price Prediction"
+                        class="project-image" loading="lazy">
+                    <div class="project-overlay"><i class="fas fa-expand-alt"></i></div>
+                </div>
+                <div class="project-body">
+                    <h3>
+                        <span class="lang-en">Flight Ticket Price Prediction</span>
+                        <span class="lang-ar">التنبؤ بأسعار تذاكر الطيران</span>
+                    </h3>
+                    <p class="lang-en">Developed a Random Forest regression model to predict flight ticket prices based on airline, route, and travel timing.</p>
+                    <p class="lang-ar">تطوير نموذج انحدار باستخدام الغابات العشوائية للتنبؤ بأسعار تذاكر الطيران بناءً على شركة الطيران، المسار، ووقت السفر.</p>
                     <div class="project-tags">
                         <span>Python</span><span>Scikit-learn</span><span>ML</span>
                     </div>
-                    <a href="https://github.com/Abdelrahmandeep/Flight-Price-Prediction" class="btn btn-outline" target="_blank" rel="noopener noreferrer">View Project <i class="fas fa-arrow-right"></i></a>
+                    <a href="https://github.com/Abdelrahmandeep/Flight-Price-Prediction" class="btn btn-outline"
+                        target="_blank" rel="noopener noreferrer">
+                        <span class="lang-en">View Project <i class="fas fa-arrow-right"></i></span>
+                        <span class="lang-ar">عرض المشروع <i class="fas fa-arrow-left"></i></span>
+                    </a>
                 </div>
             </div>
 
             <div class="project-card glass-card" data-modal="modal-2">
                 <div class="project-image-wrapper">
-                    <img src="screenshot-prestige-cars.png" alt="Prestige Cars Sales Performance Analysis" class="project-image" loading="lazy">
+                    <img src="assets/img/projects/prestige-cars.png" alt="Prestige Cars Sales Performance Analysis"
+                        class="project-image" loading="lazy">
                     <div class="project-overlay"><i class="fas fa-expand-alt"></i></div>
                 </div>
                 <div class="project-body">
-                    <h3>Prestige Cars Sales Analysis</h3>
-                    <p>Cleaned data with Python and built an interactive dashboard to analyze $25.2M revenue, uncovering top global markets.</p>
+                    <h3>
+                        <span class="lang-en">Prestige Cars Sales Analysis</span>
+                        <span class="lang-ar">تحليل مبيعات سيارات بريستيج</span>
+                    </h3>
+                    <p class="lang-en">Cleaned data with Python and built an interactive dashboard to analyze $25.2M revenue, uncovering top global markets.</p>
+                    <p class="lang-ar">تنظيف البيانات باستخدام بايثون وبناء لوحة بيانات تفاعلية لتحليل مبيعات بلغت 25.2 مليون دولار، والكشف عن أفضل الأسواق العالمية.</p>
                     <div class="project-tags">
                         <span>Python</span><span>Plotly</span><span>Excel</span>
                     </div>
-                    <a href="https://github.com/Abdelrahmandeep/Prestige-Cars-Sales-Analysis" class="btn btn-outline" target="_blank" rel="noopener noreferrer">View Project <i class="fas fa-arrow-right"></i></a>
+                    <a href="https://github.com/Abdelrahmandeep/Prestige-Cars-Sales-Analysis" class="btn btn-outline"
+                        target="_blank" rel="noopener noreferrer">
+                        <span class="lang-en">View Project <i class="fas fa-arrow-right"></i></span>
+                        <span class="lang-ar">عرض المشروع <i class="fas fa-arrow-left"></i></span>
+                    </a>
                 </div>
             </div>
 
             <div class="project-card glass-card" data-modal="modal-3">
                 <div class="project-image-wrapper">
-                    <img src="screenshot-coca-cola.png" alt="Coca-Cola Logistics & Sales Dashboard" class="project-image" loading="lazy">
+                    <img src="assets/img/projects/coca-cola.png" alt="Coca-Cola Logistics & Sales Dashboard"
+                        class="project-image" loading="lazy">
                     <div class="project-overlay"><i class="fas fa-expand-alt"></i></div>
                 </div>
                 <div class="project-body">
-                    <h3>Coca-Cola Logistics &amp; Sales Dashboard</h3>
-                    <p>Developed a dashboard using Excel to track $6.8M in revenue, analyzing delivery efficiency across major carriers.</p>
+                    <h3>
+                        <span class="lang-en">Coca-Cola Logistics &amp; Sales Dashboard</span>
+                        <span class="lang-ar">لوحة مبيعات ولوجستيات كوكاكولا</span>
+                    </h3>
+                    <p class="lang-en">Developed a dashboard using Excel to track $6.8M in revenue, analyzing delivery efficiency across major carriers.</p>
+                    <p class="lang-ar">تطوير لوحة بيانات باستخدام إكسيل لتتبع إيرادات بقيمة 6.8 مليون دولار، وتحليل كفاءة الشحن عبر شركات التوزيع الرئيسية.</p>
                     <div class="project-tags">
                         <span>Excel</span><span>Dashboard</span><span>Logistics</span>
                     </div>
-                    <a href="https://github.com/Abdelrahmandeep/Coca-Cola-Sales-Logistics-Performance-Dashboard" class="btn btn-outline" target="_blank" rel="noopener noreferrer">View Project <i class="fas fa-arrow-right"></i></a>
+                    <a href="https://github.com/Abdelrahmandeep/Coca-Cola-Sales-Logistics-Performance-Dashboard"
+                        class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+                        <span class="lang-en">View Project <i class="fas fa-arrow-right"></i></span>
+                        <span class="lang-ar">عرض المشروع <i class="fas fa-arrow-left"></i></span>
+                    </a>
                 </div>
             </div>
 
             <div class="project-card glass-card" data-modal="modal-4">
                 <div class="project-image-wrapper">
-                    <img src="RetailNova Sales Performance Dashboard.png" alt="RetailNova Sales Performance Dashboard" class="project-image" loading="lazy">
+                    <img src="assets/img/projects/retailnova.png" alt="RetailNova Sales Performance Dashboard"
+                        class="project-image" loading="lazy">
                     <div class="project-overlay"><i class="fas fa-expand-alt"></i></div>
                 </div>
                 <div class="project-body">
-                    <h3>RetailNova Sales Performance Dashboard</h3>
-                    <p>Developed an interactive sales dashboard analyzing $109.85M in revenue and $9.37M in profit. Tracked regional performance, top products, and sales representative efficiency to drive data-driven retail insights.</p>
+                    <h3>
+                        <span class="lang-en">RetailNova Sales Performance Dashboard</span>
+                        <span class="lang-ar">لوحة أداء مبيعات ريتيل نوفا</span>
+                    </h3>
+                    <p class="lang-en">Developed an interactive sales dashboard analyzing $109.85M in revenue and $9.37M in profit. Tracked regional performance, top products, and sales representative efficiency to drive retail insights.</p>
+                    <p class="lang-ar">تطوير لوحة مبيعات تفاعلية لتحليل إيرادات بلغت 109.85 مليون دولار وأرباح بقيمة 9.37 مليون دولار. تتبع أداء المناطق، المنتجات الأكثر مبيعاً، وكفاءة ممثلي المبيعات.</p>
                     <div class="project-tags">
                         <span>Excel</span><span>SQL</span><span>Dashboard</span>
                     </div>
-                    <a href="https://github.com/Abdelrahmandeep/RetailNova-Sales-Performance-Dashboard" class="btn btn-outline" target="_blank" rel="noopener noreferrer">View Project <i class="fas fa-arrow-right"></i></a>
+                    <a href="https://github.com/Abdelrahmandeep/RetailNova-Sales-Performance-Dashboard"
+                        class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+                        <span class="lang-en">View Project <i class="fas fa-arrow-right"></i></span>
+                        <span class="lang-ar">عرض المشروع <i class="fas fa-arrow-left"></i></span>
+                    </a>
                 </div>
             </div>
 
@@ -322,52 +610,151 @@
     <div class="modal-overlay" id="modal-1">
         <div class="modal-box glass-card">
             <button class="modal-close"><i class="fas fa-times"></i></button>
-            <img src="screenshot-flight-prediction.png" alt="Flight Ticket Price Prediction">
-            <h2>Flight Ticket Price Prediction</h2>
-            <p>Developed a Random Forest regression model to predict flight ticket prices based on airline, route, and travel timing. Included advanced feature engineering and hyperparameter tuning. Achieved <strong>R² = 0.85</strong> and <strong>MAPE = 1.5%</strong>.</p>
+            <img src="assets/img/projects/flight-prediction.png" alt="Flight Ticket Price Prediction">
+            <h2>
+                <span class="lang-en">Flight Ticket Price Prediction</span>
+                <span class="lang-ar">التنبؤ بأسعار تذاكر الطيران</span>
+            </h2>
+            <div class="lang-en">
+                <p>Developed a Random Forest regression model to predict flight ticket prices based on airline, route, and travel timing. Included advanced feature engineering and hyperparameter tuning. Achieved <strong>R² = 0.85</strong> and <strong>MAPE = 1.5%</strong>.</p>
+            </div>
+            <div class="lang-ar">
+                <p>تطوير نموذج انحدار باستخدام الغابات العشوائية للتنبؤ بأسعار تذاكر الطيران بناءً على شركة الطيران، المسار، ووقت السفر. شمل العمل هندسة متقدمة للميزات وضبط المعلمات الفائقة. تم تحقيق دقة <strong>R² = 0.85</strong> و <strong>MAPE = 1.5%</strong>.</p>
+            </div>
             <div class="project-tags">
                 <span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>Machine Learning</span><span>Feature Engineering</span>
             </div>
-            <a href="https://github.com/Abdelrahmandeep/Flight-Price-Prediction" class="btn btn-primary" target="_blank">View on GitHub <i class="fab fa-github"></i></a>
+            <a href="https://github.com/Abdelrahmandeep/Flight-Price-Prediction" class="btn btn-primary"
+                target="_blank">
+                <span class="lang-en">View on GitHub <i class="fab fa-github"></i></span>
+                <span class="lang-ar">عرض على GitHub <i class="fab fa-github"></i></span>
+            </a>
         </div>
     </div>
 
     <div class="modal-overlay" id="modal-2">
         <div class="modal-box glass-card">
             <button class="modal-close"><i class="fas fa-times"></i></button>
-            <img src="screenshot-prestige-cars.png" alt="Prestige Cars Sales Analysis">
-            <h2>Prestige Cars Sales Performance Analysis</h2>
-            <p>Cleaned raw sales data with Python and built a fully interactive dashboard using Plotly and Excel to analyze <strong>$25.2M in revenue</strong>. Uncovered top global markets, brand profitability, and seasonal trends for luxury cars.</p>
+            <img src="assets/img/projects/prestige-cars.png" alt="Prestige Cars Sales Analysis">
+            <h2>
+                <span class="lang-en">Prestige Cars Sales Performance Analysis</span>
+                <span class="lang-ar">تحليل مبيعات سيارات بريستيج</span>
+            </h2>
+            <div class="lang-en">
+                <p>Cleaned raw sales data with Python and built a fully interactive dashboard using Plotly and Excel to analyze <strong>$25.2M in revenue</strong>. Uncovered top global markets, brand profitability, and seasonal trends for luxury cars.</p>
+            </div>
+            <div class="lang-ar">
+                <p>تنظيف بيانات المبيعات الأولية باستخدام بايثون وبناء لوحة بيانات تفاعلية بالكامل باستخدام Plotly وإكسيل لتحليل مبيعات بلغت <strong>25.2 مليون دولار</strong>. الكشف عن الأسواق العالمية الكبرى، وربحية العلامات التجارية، والاتجاهات الموسمية للسيارات الفاخرة.</p>
+            </div>
             <div class="project-tags">
                 <span>Python</span><span>Plotly</span><span>Excel</span><span>Data Cleaning</span><span>Dashboard</span>
             </div>
-            <a href="https://github.com/Abdelrahmandeep/Prestige-Cars-Sales-Analysis" class="btn btn-primary" target="_blank">View on GitHub <i class="fab fa-github"></i></a>
+            <a href="https://github.com/Abdelrahmandeep/Prestige-Cars-Sales-Analysis" class="btn btn-primary"
+                target="_blank">
+                <span class="lang-en">View on GitHub <i class="fab fa-github"></i></span>
+                <span class="lang-ar">عرض على GitHub <i class="fab fa-github"></i></span>
+            </a>
         </div>
     </div>
 
     <div class="modal-overlay" id="modal-3">
         <div class="modal-box glass-card">
             <button class="modal-close"><i class="fas fa-times"></i></button>
-            <img src="screenshot-coca-cola.png" alt="Coca-Cola Logistics Dashboard">
-            <h2>Coca-Cola Logistics &amp; Sales Dashboard</h2>
-            <p>Developed a comprehensive logistics and sales dashboard using Excel to track <strong>$6.8M in revenue</strong>. Analyzed delivery efficiency and on-time rates across major carriers. Identified key regional sales trends to support operational decisions.</p>
+            <img src="assets/img/projects/coca-cola.png" alt="Coca-Cola Logistics Dashboard">
+            <h2>
+                <span class="lang-en">Coca-Cola Logistics &amp; Sales Dashboard</span>
+                <span class="lang-ar">لوحة مبيعات ولوجستيات كوكاكولا</span>
+            </h2>
+            <div class="lang-en">
+                <p>Developed a comprehensive logistics and sales dashboard using Excel to track <strong>$6.8M in revenue</strong>. Analyzed delivery efficiency and on-time rates across major carriers. Identified key regional sales trends to support operational decisions.</p>
+            </div>
+            <div class="lang-ar">
+                <p>تطوير لوحة بيانات شاملة للخدمات اللوجستية والمبيعات باستخدام إكسيل لتتبع <strong>إيرادات بقيمة 6.8 مليون دولار</strong>. تحليل كفاءة التسليم ومعدلات الالتزام بالمواعيد عبر شركات النقل الرئيسية، وتحديد اتجاهات المبيعات لدعم القرارات التشغيلية.</p>
+            </div>
             <div class="project-tags">
                 <span>Excel</span><span>Dashboard</span><span>Logistics</span><span>Data Analysis</span>
             </div>
-            <a href="https://github.com/Abdelrahmandeep/Coca-Cola-Sales-Logistics-Performance-Dashboard" class="btn btn-primary" target="_blank">View on GitHub <i class="fab fa-github"></i></a>
+            <a href="https://github.com/Abdelrahmandeep/Coca-Cola-Sales-Logistics-Performance-Dashboard"
+                class="btn btn-primary" target="_blank">
+                <span class="lang-en">View on GitHub <i class="fab fa-github"></i></span>
+                <span class="lang-ar">عرض على GitHub <i class="fab fa-github"></i></span>
+            </a>
         </div>
     </div>
 
     <div class="modal-overlay" id="modal-4">
         <div class="modal-box glass-card">
             <button class="modal-close"><i class="fas fa-times"></i></button>
-            <img src="RetailNova Sales Performance Dashboard.png" alt="RetailNova Sales Dashboard">
-            <h2>RetailNova Sales Performance Dashboard</h2>
-            <p>Built an interactive Excel dashboard analyzing <strong>$109.85M in revenue</strong> and <strong>$9.37M in profit</strong>. Tracked regional performance, top products, and sales representative efficiency to drive data-driven retail insights.</p>
+            <img src="assets/img/projects/retailnova.png" alt="RetailNova Sales Dashboard">
+            <h2>
+                <span class="lang-en">RetailNova Sales Performance Dashboard</span>
+                <span class="lang-ar">لوحة أداء مبيعات ريتيل نوفا</span>
+            </h2>
+            <div class="lang-en">
+                <p>Built an interactive Excel dashboard analyzing <strong>$109.85M in revenue</strong> and <strong>$9.37M in profit</strong>. Tracked regional performance, top products, and sales representative efficiency to drive data-driven retail insights.</p>
+            </div>
+            <div class="lang-ar">
+                <p>بناء لوحة بيانات تفاعلية باستخدام إكسيل لتحليل <strong>إيرادات بقيمة 109.85 مليون دولار</strong> و<strong>أرباح بقيمة 9.37 مليون دولار</strong>. تتبع الأداء الإقليمي، والمنتجات الأكثر مبيعاً، وكفاءة مندوبي المبيعات لتقديم رؤى مدعومة بالبيانات.</p>
+            </div>
             <div class="project-tags">
                 <span>Excel</span><span>SQL</span><span>Dashboard</span><span>Data Analysis</span>
             </div>
-            <a href="https://github.com/Abdelrahmandeep/RetailNova-Sales-Performance-Dashboard" class="btn btn-primary" target="_blank">View on GitHub <i class="fab fa-github"></i></a>
+            <a href="https://github.com/Abdelrahmandeep/RetailNova-Sales-Performance-Dashboard" class="btn btn-primary"
+                target="_blank">
+                <span class="lang-en">View on GitHub <i class="fab fa-github"></i></span>
+                <span class="lang-ar">عرض على GitHub <i class="fab fa-github"></i></span>
+            </a>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-5">
+        <div class="modal-box glass-card">
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+            <img src="assets/img/projects/nex-valut.png" alt="Nex Valut Financial Dashboard" id="main-modal-5-img">
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.5rem; margin-bottom: 1.5rem;">
+                <img src="assets/img/projects/nex-valut.png" alt="Executive Summary"
+                    style="cursor: pointer; margin-bottom: 0; max-height: 80px; object-fit: cover; border-radius: 4px; border: 1.5px solid var(--glass-border);"
+                    onclick="document.getElementById('main-modal-5-img').src=this.src">
+                <img src="assets/img/projects/nex-valut-2.png" alt="Financial Trends"
+                    style="cursor: pointer; margin-bottom: 0; max-height: 80px; object-fit: cover; border-radius: 4px; border: 1.5px solid var(--glass-border);"
+                    onclick="document.getElementById('main-modal-5-img').src=this.src">
+                <img src="assets/img/projects/nex-valut-3.png" alt="Departmental Budgets"
+                    style="cursor: pointer; margin-bottom: 0; max-height: 80px; object-fit: cover; border-radius: 4px; border: 1.5px solid var(--glass-border);"
+                    onclick="document.getElementById('main-modal-5-img').src=this.src">
+                <img src="assets/img/projects/nex-valut-4.png" alt="Detailed Analysis"
+                    style="cursor: pointer; margin-bottom: 0; max-height: 80px; object-fit: cover; border-radius: 4px; border: 1.5px solid var(--glass-border);"
+                    onclick="document.getElementById('main-modal-5-img').src=this.src">
+            </div>
+            <h2>
+                <span class="lang-en">Nex Valut - Financial Performance Dashboard</span>
+                <span class="lang-ar">لوحة بيانات نكس فالت لتحليل الأداء المالي</span>
+            </h2>
+            <div class="lang-en">
+                <p>Developed an interactive, end-to-end Power BI Financial Dashboard designed to analyze financial health, track key KPIs (Revenue, Net Profit, Profit Margins, Operating Expenses), and provide actionable business insights for decision-makers.</p>
+                <p><strong>Key Accomplishments &amp; Features:</strong></p>
+                <ul style="padding-left: 20px; margin-bottom: 1.25rem;">
+                    <li style="margin-bottom: 6px;"><strong>Data Modeling &amp; ETL:</strong> Structured relationship cardinalities using Star Schema and built custom Calendar Table for time intelligence via Power Query.</li>
+                    <li style="margin-bottom: 6px;"><strong>DAX Formulas:</strong> Designed advanced formulas for dynamic budgeting comparisons, variance calculations, Year-To-Date (YTD), and Year-Over-Year (YoY) growth tracking.</li>
+                    <li style="margin-bottom: 6px;"><strong>Interactive UI:</strong> Engineered bookmark navigation, page tooltips, and dynamic parameter-based slicers to maximize analysis flexibility.</li>
+                </ul>
+            </div>
+            <div class="lang-ar">
+                <p>تطوير لوحة بيانات مالية تفاعلية متكاملة باستخدام Power BI مصممة لتحليل الصحة المالية، وتتبع مؤشرات الأداء الرئيسية (الإيرادات، صافي الأرباح، هوامش الربح، المصاريف التشغيلية)، وتقديم رؤى قابلة للتنفيذ لمتخذي القرار.</p>
+                <p><strong>أبرز الإنجازات والميزات:</strong></p>
+                <ul style="padding-right: 20px; margin-bottom: 1.25rem;">
+                    <li style="margin-bottom: 6px;"><strong>نمذجة البيانات وETL:</strong> تصميم هيكل العلاقات للبيانات بنظام نجمي (Star Schema) وبناء جدول تقويم مخصص لذكاء الوقت الذاتي عبر Power Query.</li>
+                    <li style="margin-bottom: 6px;"><strong>معادلات DAX المتقدمة:</strong> تصميم معادلات متقدمة للمقارنة الديناميكية للميزانيات، وحساب الفروقات، ومؤشرات الـ YTD والـ YoY.</li>
+                    <li style="margin-bottom: 6px;"><strong>واجهة مستخدم تفاعلية:</strong> برمجة أزرار التنقل (Bookmarks)، وتلميحات الصفحات (Tooltips)، ومقسمات تصفية متغيرة لرفع مرونة التحليل المالي.</li>
+                </ul>
+            </div>
+            <div class="project-tags">
+                <span>Power BI</span><span>DAX</span><span>Power Query</span><span>Data Modeling</span><span>Financial Analysis</span>
+            </div>
+            <a href="https://github.com/Abdelrahmandeep/Nex-Valut---Financial-Performance-Dashboard"
+                class="btn btn-primary" target="_blank">
+                <span class="lang-en">View on GitHub <i class="fab fa-github"></i></span>
+                <span class="lang-ar">عرض على GitHub <i class="fab fa-github"></i></span>
+            </a>
         </div>
     </div>
 
@@ -375,59 +762,51 @@
     <div class="modal-overlay" id="cert-modal-1">
         <div class="modal-box glass-card" style="text-align: center; max-width: 900px; padding: 2rem;">
             <button class="modal-close"><i class="fas fa-times"></i></button>
-            <img src="NTI CERTIFICATIONS.png" alt="NTI Certificate" class="cert-img" style="margin-bottom: 0;">
+            <img src="assets/img/certs/nti-cert.png" alt="NTI Certificate" class="cert-img"
+                style="margin-bottom: 0;">
         </div>
     </div>
     <div class="modal-overlay" id="cert-modal-2">
         <div class="modal-box glass-card" style="text-align: center; max-width: 900px; padding: 2rem;">
             <button class="modal-close"><i class="fas fa-times"></i></button>
-            <img src="ALX CERTIFICATIONS.png" alt="ALX Certificate" class="cert-img" style="margin-bottom: 0;">
+            <img src="assets/img/certs/alx-cert.png" alt="ALX Certificate" class="cert-img"
+                style="margin-bottom: 0;">
         </div>
     </div>
     <div class="modal-overlay" id="cert-modal-3">
         <div class="modal-box glass-card" style="text-align: center; max-width: 900px; padding: 2rem;">
             <button class="modal-close"><i class="fas fa-times"></i></button>
-            <img src="Nvidia CERTIFICATIONS.png" alt="Nvidia Certificate" class="cert-img" style="margin-bottom: 0;">
+            <img src="assets/img/certs/nvidia-cert.png" alt="Nvidia Certificate" class="cert-img"
+                style="margin-bottom: 0;">
         </div>
     </div>
     <div class="modal-overlay" id="cert-modal-4">
         <div class="modal-box glass-card" style="text-align: center; max-width: 900px; padding: 2rem;">
             <button class="modal-close"><i class="fas fa-times"></i></button>
-            <img src="Power BI CERTIFICATIONS .png" alt="Microsoft Data Analysis Certificate" class="cert-img" style="margin-bottom: 0;">
+            <img src="assets/img/certs/power-bi-cert.png" alt="Microsoft Data Analysis Certificate" class="cert-img"
+                style="margin-bottom: 0;">
         </div>
     </div>
 
-    <!-- ========== SERVICES ========== -->
-    <section id="services" class="reveal">
-        <h2 class="section-title">Services I Offer</h2>
-        <div class="services-grid">
-            <div class="service-card glass-card">
-                <i class="fas fa-chart-pie"></i>
-                <h3>Dashboard Development</h3>
-                <p>Building interactive dashboards to visualize data and track business performance.</p>
-            </div>
-            <div class="service-card glass-card">
-                <i class="fas fa-robot"></i>
-                <h3>Machine Learning Models</h3>
-                <p>Developing predictive models to extract insights and forecast outcomes from data.</p>
-            </div>
-            <div class="service-card glass-card">
-                <i class="fas fa-filter"></i>
-                <h3>Data Cleaning &amp; Preparation</h3>
-                <p>Cleaning and organizing messy datasets to make them ready for analysis and reporting.</p>
-            </div>
-        </div>
-    </section>
 
     <!-- ========== CONTACT ========== -->
     <section id="contact" class="reveal">
-        <h2 class="section-title">Get In Touch</h2>
-        <p class="contact-intro">Let's turn your data into powerful insights. Contact me today.</p>
+        <h2 class="section-title">
+            <span class="lang-en">Get In Touch</span>
+            <span class="lang-ar">تواصل معي</span>
+        </h2>
+        <p class="contact-intro">
+            <span class="lang-en">Let's turn your data into powerful insights. Contact me today.</span>
+            <span class="lang-ar">دعنا نحول بياناتك إلى رؤى قوية. اتصل بي اليوم.</span>
+        </p>
         <div class="contact-wrapper">
             <div class="contact-info-panel glass-card">
                 <div class="contact-item">
                     <i class="fas fa-map-marker-alt"></i>
-                    <p>Alexandria, Egypt</p>
+                    <p>
+                        <span class="lang-en">Alexandria, Egypt</span>
+                        <span class="lang-ar">الإسكندرية، مصر</span>
+                    </p>
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-phone"></i>
@@ -439,24 +818,36 @@
                 </div>
                 <div class="contact-item">
                     <i class="fab fa-linkedin"></i>
-                    <p><a href="https://www.linkedin.com/in/abdelrahman-alnaggar-44r4/" target="_blank" class="contact-link">LinkedIn Profile</a></p>
+                    <p><a href="https://www.linkedin.com/in/abdelrahman-alnaggar-44r4/" target="_blank"
+                            class="contact-link">LinkedIn Profile</a></p>
                 </div>
             </div>
             <form class="contact-form glass-card" action="https://formspree.io/f/meeryrbg" method="POST">
                 <div class="form-group">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <label for="name">
+                        <span class="lang-en">Full Name</span>
+                        <span class="lang-ar">الاسم بالكامل</span>
+                    </label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required data-en-placeholder="Your Name" data-ar-placeholder="اسمك بالكامل">
                 </div>
                 <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    <label for="email">
+                        <span class="lang-en">Email Address</span>
+                        <span class="lang-ar">البريد الإلكتروني</span>
+                    </label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com" required data-en-placeholder="your@email.com" data-ar-placeholder="your@email.com">
                 </div>
                 <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                    <label for="message">
+                        <span class="lang-en">Message</span>
+                        <span class="lang-ar">الرسالة</span>
+                    </label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
+                        required data-en-placeholder="Tell me about your project..." data-ar-placeholder="أخبرني عن تفاصيل مشروعك..."></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary" style="width:100%; border:none; font-size:1rem;">
-                    Send Message <i class="fas fa-paper-plane"></i>
+                <button type="submit" class="btn btn-primary btn-submit">
+                    <span class="lang-en">Send Message <i class="fas fa-paper-plane"></i></span>
+                    <span class="lang-ar">إرسال الرسالة <i class="fas fa-paper-plane"></i></span>
                 </button>
             </form>
         </div>
@@ -465,24 +856,38 @@
     <!-- ========== FOOTER ========== -->
     <footer>
         <div class="footer-content">
-            <h2>Abdo<span>.</span></h2>
+            <h2>
+                <span class="lang-en">Abdo<span>.</span></span>
+                <span class="lang-ar">عبده<span>.</span></span>
+            </h2>
             <div class="footer-socials">
-                <a href="https://www.linkedin.com/in/abdelrahman-alnaggar-44r4/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/Abdelrahmandeep" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/abdelrahman-alnaggar-44r4/" target="_blank"
+                    aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Abdelrahmandeep" target="_blank" aria-label="GitHub"><i
+                        class="fab fa-github"></i></a>
             </div>
             <div class="footer-freelance">
-                <p>Freelance Platforms:</p>
+                <p>
+                    <span class="lang-en">Freelance Platforms:</span>
+                    <span class="lang-ar">منصات العمل الحر:</span>
+                </p>
                 <div class="platform-links">
-                    <a href="https://mostaql.com/u/Abdelrahman874" target="_blank" class="platform-btn">مستقل</a>
-                    <a href="https://khamsat.com/user/abdelrahman874" target="_blank" class="platform-btn">خمسات</a>
-                    <a href="https://nafezly.com/u/AbdelrahmanAlnaggar" target="_blank" class="platform-btn">نفذلي</a>
-                    <a href="https://kafiil.com/u/abdelrahman_alnaggar" target="_blank" class="platform-btn">كفيل</a>
+                    <a href="https://mostaql.com/u/Abdelrahman874" target="_blank" class="platform-btn">مستقل
+                        (Mostaql)</a>
+                    <a href="https://khamsat.com/user/abdelrahman874" target="_blank" class="platform-btn">خمسات
+                        (Khamsat)</a>
+                    <a href="https://nafezly.com/u/AbdelrahmanAlnaggar" target="_blank" class="platform-btn">نفذلي
+                        (Nafezly)</a>
+                    <a href="https://kafiil.com/u/abdelrahman_alnaggar" target="_blank" class="platform-btn">كفيل
+                        (Kafiil)</a>
                 </div>
             </div>
-            <p class="footer-copy">&copy; 2026 Abdelrahman Alnaggar. All rights reserved.</p>
+            <p class="footer-copy lang-en">&copy; 2026 Abdelrahman Alnaggar. All rights reserved.</p>
+            <p class="footer-copy lang-ar">&copy; 2026 عبد الرحمن النجار. جميع الحقوق محفوظة.</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>
