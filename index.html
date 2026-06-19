@@ -557,22 +557,22 @@
 
             <div class="project-card glass-card" data-modal="modal-3">
                 <div class="project-image-wrapper">
-                    <img src="assets/img/projects/coca-cola.png" alt="Coca-Cola Logistics & Sales Dashboard"
+                    <img src="assets/img/projects/heart-disease.png" alt="Heart Disease Prediction ML Pipeline"
                         class="project-image" loading="lazy">
                     <div class="project-overlay"><i class="fas fa-expand-alt"></i></div>
                 </div>
                 <div class="project-body">
                     <h3>
-                        <span class="lang-en">Coca-Cola Logistics &amp; Sales Dashboard</span>
-                        <span class="lang-ar">لوحة مبيعات ولوجستيات كوكاكولا</span>
+                        <span class="lang-en">Heart Disease Prediction</span>
+                        <span class="lang-ar">التنبؤ بمخاطر أمراض القلب</span>
                     </h3>
-                    <p class="lang-en">Developed a dashboard using Excel to track $6.8M in revenue, analyzing delivery efficiency across major carriers.</p>
-                    <p class="lang-ar">تطوير لوحة بيانات باستخدام إكسيل لتتبع إيرادات بقيمة 6.8 مليون دولار، وتحليل كفاءة الشحن عبر شركات التوزيع الرئيسية.</p>
+                    <p class="lang-en">Developed an AI-powered heart disease risk prediction pipeline on the CDC BRFSS dataset (319K+ patients). Tuned using Optuna, achieving 80.57% Recall, with SHAP-based explainability and a Streamlit web app.</p>
+                    <p class="lang-ar">تطوير نموذج ذكاء اصطناعي للتنبؤ بمخاطر أمراض القلب بناءً على بيانات CDC لأكثر من 319 ألف مريض. تم ضبطه بـ Optuna ليحقق Recall بنسبة 80.57%، مع دعم تفسير القرارات (SHAP) وتطبيق Streamlit.</p>
                     <div class="project-tags">
-                        <span>Excel</span><span>Dashboard</span><span>Logistics</span>
+                        <span>Python</span><span>ML</span><span>Streamlit</span><span>SHAP</span><span>Optuna</span>
                     </div>
-                    <a href="https://github.com/Abdelrahmandeep/Coca-Cola-Sales-Logistics-Performance-Dashboard"
-                        class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/Abdelrahmandeep/Heart-Disease-Prediction-ML" class="btn btn-outline"
+                        target="_blank" rel="noopener noreferrer">
                         <span class="lang-en">View Project <i class="fas fa-arrow-right"></i></span>
                         <span class="lang-ar">عرض المشروع <i class="fas fa-arrow-left"></i></span>
                     </a>
@@ -660,25 +660,46 @@
     <div class="modal-overlay" id="modal-3">
         <div class="modal-box glass-card">
             <button class="modal-close"><i class="fas fa-times"></i></button>
-            <img src="assets/img/projects/coca-cola.png" alt="Coca-Cola Logistics Dashboard">
+            <img src="assets/img/projects/heart-disease.png" alt="Heart Disease Prediction ML Pipeline">
             <h2>
-                <span class="lang-en">Coca-Cola Logistics &amp; Sales Dashboard</span>
-                <span class="lang-ar">لوحة مبيعات ولوجستيات كوكاكولا</span>
+                <span class="lang-en">Heart Disease Prediction — ML Pipeline</span>
+                <span class="lang-ar">نظام التنبؤ بمخاطر أمراض القلب بالذكاء الاصطناعي</span>
             </h2>
             <div class="lang-en">
-                <p>Developed a comprehensive logistics and sales dashboard using Excel to track <strong>$6.8M in revenue</strong>. Analyzed delivery efficiency and on-time rates across major carriers. Identified key regional sales trends to support operational decisions.</p>
+                <p>Developed a comprehensive <strong>Machine Learning pipeline</strong> for predicting heart disease risk, trained on the CDC BRFSS dataset containing <strong>319,795 patients</strong>. The system employs state-of-the-art predictive modeling and explainability techniques to assist clinical decision-making.</p>
+                <p><strong>Key Features &amp; Technical Highlights:</strong></p>
+                <ul style="padding-left: 20px; margin-bottom: 1.25rem;">
+                    <li style="margin-bottom: 6px;"><strong>6 ML Architectures:</strong> Evaluated Logistic Regression, Random Forest, Neural Networks (MLP), XGBoost, LightGBM, and Stacking Ensembles.</li>
+                    <li style="margin-bottom: 6px;"><strong>Optuna Optimization:</strong> Performed Bayesian hyperparameter tuning over 200 trials, selecting LightGBM V2 as the best model with <strong>ROC-AUC = 0.8404</strong> and <strong>Recall = 80.57%</strong>.</li>
+                    <li style="margin-bottom: 6px;"><strong>Explainable AI (XAI):</strong> Integrated SHAP (Shapley Additive exPlanations) values to provide global importance and individual waterfall predictions.</li>
+                    <li style="margin-bottom: 6px;"><strong>Streamlit Predictor:</strong> Deployed an interactive web application that accepts real-time patient parameters and displays dynamic SHAP risk analysis.</li>
+                </ul>
             </div>
             <div class="lang-ar">
-                <p>تطوير لوحة بيانات شاملة للخدمات اللوجستية والمبيعات باستخدام إكسيل لتتبع <strong>إيرادات بقيمة 6.8 مليون دولار</strong>. تحليل كفاءة التسليم ومعدلات الالتزام بالمواعيد عبر شركات النقل الرئيسية، وتحديد اتجاهات المبيعات لدعم القرارات التشغيلية.</p>
+                <p>تطوير <strong>خط معالجة متكامل للتعلم الآلي (Machine Learning Pipeline)</strong> للتنبؤ بمخاطر أمراض القلب، تم تدريبه على مجموعة بيانات CDC BRFSS الضخمة التي تشمل <strong>319,795 مريضاً</strong>. يقدم النظام نمذجة تنبؤية متقدمة مع إمكانية تفسير القرارات لدعم التشخيص الطبي الطبيعي.</p>
+                <p><strong>أبرز الميزات والتقنيات المستخدمة:</strong></p>
+                <ul style="padding-right: 20px; margin-bottom: 1.25rem;">
+                    <li style="margin-bottom: 6px;"><strong>6 نماذج ذكاء اصطناعي:</strong> اختبار وتقييم نماذج الانحدار اللوجستي، الغابات العشوائية، الشبكات العصبية (MLP)، XGBoost، LightGBM، ونموذج التجميع التراكمي (Stacking Ensemble).</li>
+                    <li style="margin-bottom: 6px;"><strong>ضبط الفائقة باستخدام Optuna:</strong> تنفيذ ضبط المعلمات عبر خوارزميات الاستدلال البايزي لـ 200 محاولة، ليحقق نموذج LightGBM V2 دقة <strong>ROC-AUC = 0.8404</strong> واستدعاء <strong>Recall = 80.57%</strong>.</li>
+                    <li style="margin-bottom: 6px;"><strong>الذكاء الاصطناعي القابل للتفسير (XAI):</strong> دمج قيم SHAP لتوضيح العوامل الأكثر تأثيراً على مخاطر الإصابة لكل مريض على حدة وبشكل عام.</li>
+                    <li style="margin-bottom: 6px;"><strong>تطبيق ويب تفاعلي:</strong> بناء تطبيق ويب باستخدام Streamlit يقبل مدخلات المرضى في الوقت الفعلي ويعرض تحليلاً ديناميكياً للقيم والمخاطر.</li>
+                </ul>
             </div>
             <div class="project-tags">
-                <span>Excel</span><span>Dashboard</span><span>Logistics</span><span>Data Analysis</span>
+                <span>Python</span><span>Scikit-learn</span><span>LightGBM</span><span>SHAP</span><span>Streamlit</span><span>Optuna</span>
             </div>
-            <a href="https://github.com/Abdelrahmandeep/Coca-Cola-Sales-Logistics-Performance-Dashboard"
-                class="btn btn-primary" target="_blank">
-                <span class="lang-en">View on GitHub <i class="fab fa-github"></i></span>
-                <span class="lang-ar">عرض على GitHub <i class="fab fa-github"></i></span>
-            </a>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                <a href="https://github.com/Abdelrahmandeep/Heart-Disease-Prediction-ML" class="btn btn-primary"
+                    target="_blank" style="flex: 1; text-align: center;">
+                    <span class="lang-en">View on GitHub <i class="fab fa-github"></i></span>
+                    <span class="lang-ar">عرض على GitHub <i class="fab fa-github"></i></span>
+                </a>
+                <a href="https://heart-disease-prediction-ml-jjnyoyfqwcnxnwfznz7syc.streamlit.app/" class="btn btn-secondary"
+                    target="_blank" style="flex: 1; text-align: center; border: 1.5px solid var(--primary-color);">
+                    <span class="lang-en">Live Demo <i class="fas fa-external-link-alt"></i></span>
+                    <span class="lang-ar">العرض المباشر <i class="fas fa-external-link-alt"></i></span>
+                </a>
+            </div>
         </div>
     </div>
 
