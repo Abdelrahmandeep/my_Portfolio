@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://abdelrahmandeep.github.io/my_Portfolio/sitemap.xml
+Sitemap: https://abdelrahmandeep.github.io/my_portfolio/sitemap.xml
