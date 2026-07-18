@@ -3,10 +3,8 @@
    ============================================================ */
 
 // ─── Loading Screen ───────────────────────────────────────────
-window.addEventListener('load', () => {
-    const loader = document.getElementById('loader');
-    setTimeout(() => loader.classList.add('hidden'), 1300);
-});
+// Removed as requested by user
+
 
 // ─── Image Fallback ──────────────────────────────────────────
 document.querySelectorAll('img').forEach(img => {
